@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function ($id) {
+    echo "selamat datang";
+});
+Route::get('/about', function ($id) {
+    echo "1941720136-wildan achmad fachrurrozi";
+});
+Route::get('/', function ($id) {
+    echo "halaman artikel dengan ID {$id}";
 });
